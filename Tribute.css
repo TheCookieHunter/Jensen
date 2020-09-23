@@ -5,8 +5,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 25%;
-  width: 25%;
+  height: 455px;
+  width: 455px;
 }
 head{
   background-color: black;
@@ -26,6 +26,17 @@ p {
   border-radius: 5px;
 }
 
-div img {
-  height: 100px;
+.box-container{
+	background-color: DodgerBlue;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; /* The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary */
+	justify-content: space-around; /* The space-around value displays the flex items with space before, between, and after the lines */
+}
+
+.box-container > div{
+	background-color: #f1f1f1;
+	max-width: 100px;
+	margin: 10px;
+  	padding: 20px;
 }
