@@ -1,3 +1,7 @@
+html {
+   background: url(https://lh3.googleusercontent.com/proxy/ea7nvtcacu2oM9M57M5A5qQTb9f1bVEcAmb34X6CG2X_juB91mh0Cs0tIcP2G75t8Ld0dEEDIvg1Gwm8savFogkJ1CYJ4toT62tRO-uoXEb6rTpogX8gFsqO6zlobQDAZIkRP4JLVLJ-MDs2N6XainrPhjCLOREI2fO8jn8) no-repeat center fixed;
+   background-size: cover;
+}
 h1 {
   text-align: center;
 }
@@ -14,7 +18,6 @@ head{
 }
 
 body {
-  background-color: black;
   color: white;
 }
 
@@ -24,19 +27,4 @@ p {
   border-style: solid;
   border: 5px solid white;
   border-radius: 5px;
-}
-
-.box-container{
-	background-color: DodgerBlue;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap; /* The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary */
-	justify-content: space-around; /* The space-around value displays the flex items with space before, between, and after the lines */
-}
-
-.box-container > div{
-	background-color: #f1f1f1;
-	max-width: 100px;
-	margin: 10px;
-  	padding: 20px;
 }
