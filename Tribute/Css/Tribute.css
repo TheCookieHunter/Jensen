@@ -1,0 +1,40 @@
+html {
+   background: url(../Pictures/img_background.jpg) no-repeat center fixed;
+   background-size: cover;
+   background-color: black;
+}
+h1 {
+  text-align: center;
+  font-family: "Helvetica", Helvetica;
+}
+
+head {
+  color: white;
+  font-family: "Helvetica", Helvetica;
+}
+
+body {
+  color: white;
+  font-family: "Helvetica", Helvetica;
+}
+
+p {
+  margin: 30px;
+  padding: 15px;
+  border-style: solid;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.main_img {
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pictures {
+  height: 469px;
+  width: 469px;
+}
