@@ -6,6 +6,15 @@ html {
 h1 {
   text-align: center;
   font-family: "Helvetica", Helvetica;
+  background-color: gray;
+  background-size: cover;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-top: 0px;
+  padding-top: 0px;
+  font-size: 50px;
+  font-family: cursive;
 }
 
 head {
@@ -16,9 +25,19 @@ head {
 body {
   color: white;
   font-family: "Helvetica", Helvetica;
+  padding: 0;
+  margin: 0;
 }
 
-p {
+.p1 {
+  margin: 30px;
+  padding: 15px;
+  border-style: solid;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.p2 {
   margin: 30px;
   padding: 15px;
   border-style: solid;
@@ -35,6 +54,36 @@ p {
 }
 
 .pictures {
-  height: 469px;
-  width: 469px;
+  height: 100%;
+  width:100%;
+}
+
+.michael_jackson_quote {
+  text-align: center;
+  font-family: cursive;
+  background-color: gray;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 40px;
+}
+
+.read_more {
+  text-align: center;
+  background-color: gray;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.box {
+ display: inline-block;
+ width: 35%;
+ height: 40%;
+ margin: 5%;
+ margin: 5%;
+ border: 0;
+ padding: 0;
+ margin-left: 8%;
+   text-align: center;
 }
