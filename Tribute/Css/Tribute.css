@@ -1,89 +1,101 @@
 html {
-   background: url(../Pictures/img_background.jpg) no-repeat center fixed;
-   background-size: cover;
-   background-color: black;
+   background: url(../Pictures/img_background.jpg) no-repeat center fixed; /* This makes the background into whatever is in the url, no-repeat means that there won't be multiple pictures to keep the quality, and fixed means that its stuck and will not move. */
+   background-size: cover; /* This one makes it so the background picture covers the whole page. */
 }
+
 h1 {
-  text-align: center;
-  font-family: "Helvetica", Helvetica;
-  background-color: gray;
-  background-size: cover;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  border-top: 0px;
-  padding-top: 0px;
-  font-size: 50px;
-  font-family: cursive;
+  text-align: center; /* This one makes it so the text is perfectly in the middle */
+  width: 100%; /* Devides the width of the box */
+  margin-top: 0; /* Makes the margin dissapear */
+  margin-bottom: 10px; /* Makes the bottom margin 10 pixels big */
+  padding-top: 0px; /* Makes the padding dissapear */
+  font-family: cursive; /* Makes the text within h1 cursive */
+  font-size: 50px; /* Makes the text 50 pixels big */
+  background-color: gray; /* Overrides the background picture and makes the background gray */
 }
 
 head {
-  color: white;
-  font-family: "Helvetica", Helvetica;
+  color: white; /* Makes the text white */
+  font-family: "Helvetica", Helvetica; /* Makes the text the font Helvetica */
 }
 
 body {
-  color: white;
-  font-family: "Helvetica", Helvetica;
-  padding: 0;
-  margin: 0;
+  color: white; /* Makes the text white */
+  font-family: "Helvetica", Helvetica; /* Makes the text the font Helvetica */
+  padding: 0; /* Deletes the padding */
+  margin: 0; /* Deletes the margin */
 }
 
-.p1 {
-  margin: 30px;
-  padding: 15px;
-  border-style: solid;
-  border: 5px solid white;
-  border-radius: 5px;
-}
-
-.p2 {
-  margin: 30px;
-  padding: 15px;
-  border-style: solid;
-  border: 5px solid white;
-  border-radius: 5px;
+.paragraph {
+  margin: 30px; /* Makes the margin 30 pixels big so that the other boxes aren't too close */
+  padding: 15px; /* Makes the padding 15 pixels so that the border isn't too close */
+  border-style: solid; /* Makes the border visible */
+  border: 5px solid white; /* Makes the border 5 pixels thick and the color white */
+  border-radius: 5px; /* Makes it so the border has rounded corners */
 }
 
 .main_img {
-  height: 40%;
-  width: 40%;
+  height: 40%; /* Makes the image 40% the height of the page */
+  width: 40%; /* Makes the image 40% the width of the page */
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .pictures {
-  height: 100%;
-  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%; /* Makes the image fully take up the space within the box that it's placed in */
+  height:100%; /* Makes the image fully take up the space within the box that it's placed in */
+  object-fit:cover;
 }
 
 .michael_jackson_quote {
-  text-align: center;
-  font-family: cursive;
-  background-color: gray;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  height: 40px;
+  text-align: center; /* Puts the text in the center */
+  font-family: cursive; /* Makes the font cursive */
+  background-color: gray; /* Makes the background color gray and overrides the background picture */
+  margin: 0; /* Deletes the margin */
+  border: 0; /* Deletes the border */
+  padding: 0; /* Deletes the padding */
+  height: 40px; /* Makes the height of the box 40 pixels */
 }
 
 .read_more {
-  text-align: center;
-  background-color: gray;
-  margin: 0;
-  border: 0;
-  padding: 0;
+  text-align: center; /* Puts the text in the center */
+  background-color: gray; /* Overrides the bacgkround pixture and makes the color gray */
+  margin: 0; /* Deletes the margin */
+  border: 0; /* Deletes the border */
+  padding: 0; /* Deletes the padding */
 }
 
 .box {
+ position:relative;
  display: inline-block;
- width: 35%;
- height: 40%;
- margin: 5%;
- margin: 5%;
- border: 0;
- padding: 0;
- margin-left: 8%;
-   text-align: center;
+ width: 35%; /* Makes the width 35% */
+ margin: 5%; /* Makes the margin 5% */
+ padding: 0; /* Deletes the padding */
+ text-align: center /* Puts the text in the center */
+ overflow:hidden;
+}
+.box:after{
+  content: "";
+  display: block;
+  padding-bottom:100%;
+}
+
+.song_name {
+  display: none;
+  position: absolute;
+  bottom:0;
+  width:100%; /* Makes the width the whole box */
+  font-size:30px; /* Makes the font size 30 pixels */
+  background-color:rgba(0,0,0,7); /* decides the background color of the text in the box */
+  color: white; /* Makes the text white */
+  text-align:center; /* Puts the text in the center */
+  padding:5px 0 5px 0; /* Decides the padding of top, right, bottom and left */
+}
+
+.box:hover .song_name {
+  display:block;
 }
