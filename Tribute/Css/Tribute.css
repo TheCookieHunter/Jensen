@@ -27,11 +27,26 @@ body {
 }
 
 .paragraph {
-  margin: 30px; /* Makes the margin 30 pixels big so that the other boxes aren't too close */
-  padding: 15px; /* Makes the padding 15 pixels so that the border isn't too close */
+  margin: 2%;
+  padding: 0.5% 10px 0.5% 10px;
   border-style: solid; /* Makes the border visible */
-  border: 5px solid white; /* Makes the border 5 pixels thick and the color white */
+  border: 1% solid white; /* Makes the border 5 pixels thick and the color white */
   border-radius: 5px; /* Makes it so the border has rounded corners */
+  border-left-color:rgba(0,0,0,0.0);
+  border-right-color:rgba(0,0,0,0.0);
+  text-align: center;
+}
+
+.unordered_list {
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-left-color:rgba(0,0,0,0.0);
+  border-right-color:rgba(0,0,0,0.0);
+  border-radius: 5px;
+  padding: 0.5% 10px 0.5% 10px;
+  margin: 2%;
+  list-style-type: none;
 }
 
 .main_img {
@@ -40,10 +55,12 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2%;
 }
 
 .pictures {
   position:absolute;
+  position: center;
   top:0;
   left:0;
   width:100%; /* Makes the image fully take up the space within the box that it's placed in */
@@ -51,14 +68,13 @@ body {
   object-fit:cover;
 }
 
-.michael_jackson_quote {
+.bottom {
   text-align: center; /* Puts the text in the center */
   font-family: cursive; /* Makes the font cursive */
   background-color: gray; /* Makes the background color gray and overrides the background picture */
   margin: 0; /* Deletes the margin */
   border: 0; /* Deletes the border */
   padding: 0; /* Deletes the padding */
-  height: 40px; /* Makes the height of the box 40 pixels */
 }
 
 .read_more {
@@ -72,16 +88,19 @@ body {
 .box {
  position:relative;
  display: inline-block;
- width: 35%; /* Makes the width 35% */
- margin: 5%; /* Makes the margin 5% */
+ width: 22%; /* Makes the width 35% */
+ margin: 0%; /* Makes the margin 5% */
  padding: 0; /* Deletes the padding */
+ margin-left: 2.2%;
+ position: center;
  text-align: center /* Puts the text in the center */
  overflow:hidden;
 }
+
 .box:after{
   content: "";
   display: block;
-  padding-bottom:100%;
+  padding-bottom:100%; /* Makes the bottom padding 100% */
 }
 
 .song_name {
