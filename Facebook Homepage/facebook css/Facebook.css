@@ -13,8 +13,8 @@ body {
   padding: 10px;
   width: 100%;
   margin: auto;
-  grid-template-columns: 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% ;
-  grid-template-rows: 340px 100px 60px;
+  grid-template-columns: 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1%;
+  grid-template-rows: 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1% 1%;
   text-align: center;
   padding: 0;
   background-image: linear-gradient(black, gray, white, white, white);
@@ -23,8 +23,8 @@ body {
 
 .eevee {
   position: absolute;
-  top: 170px;
-  left: 890px;
+  top: 260px;
+  left: 880px;
   border-radius: 50%;
   height: 180px;
   width: 180px;
@@ -37,96 +37,109 @@ body {
   position:
 }
 
-  .background1 {
-    position: relative;
-    top: 0;
-    left: 0;
+.background1 {
+  position: relative;
+  top: 0;
+  left: 0;
   }
 
 .background {
   grid-column: 25 / 72;
-  grid-row: 1;
+  grid-row: 1 / 60;
+  margin: 0;
 }
 
 .name {
-  grid-column: 1 / 100;
-  grid-row: 2;
+  grid-column: 1 / 99;
+  grid-row: 60 / 70;
   font-size: 40px;
   display: grid;
   align-content: center;
-  font-style: Helvetica;
+  font-style: "Helvetica Neue";
   font-size: 40;
+}
+
+.line {
+  grid-column: 27 / 70;
+  grid-row: 75;
 }
 
 .inlagg {
   grid-column: 27 / 30;
-  grid-row: 3;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
 }
 
 .om {
   grid-column: 30 / 34;
-  grid-row: 3;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
 }
 
 .vanner {
   grid-column: 34 / 37;
-  grid-row: 3;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
 }
 
 .foton {
   grid-column: 38 / 41;
-  grid-row: 3;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
 }
 
 .fler {
   grid-column: 42 / 45;
-  grid-row: 3;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
 }
 
 .empty {
   grid-column: 44 / 55;
-  grid-row: 3;
+  grid-row: 78 / 84;
 }
 
 .redigeraprofil {
-  grid-column: 55 / 63;
-  grid-row: 3;
+  grid-column: 53 / 61;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
+  background-color: lightgray;
+  border-radius: 5%;
 }
 
 .eye {
-  grid-column: 63 / 65;
-  grid-row: 3;
+  grid-column: 61 / 64;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
+  background-color: lightgray;
+  border-radius: 5%;
 }
 
 .glas {
-  grid-column: 66 / 68;
-  grid-row: 3;
+  grid-column: 64 / 67;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
+  background-color: lightgray;
+  border-radius: 5%;
 }
 
 .dots {
-  grid-column: 69 / 71;
-  grid-row: 3;
+  grid-column: 67 / 70;
+  grid-row: 78 / 84;
   display: grid;
   align-content: center;
+  background-color: lightgray;
+  border-radius: 5%;
 }
 
 .body {
-
   font-size: 15px;
 }
