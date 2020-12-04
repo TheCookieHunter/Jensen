@@ -62,6 +62,8 @@ body {
 .line {
   grid-column: 27 / 70;
   grid-row: 75;
+  background-color: gray;
+  height: 1px;
 }
 
 .inlagg {
